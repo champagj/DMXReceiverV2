@@ -1,10 +1,12 @@
 # DMXReceiverV2
-Upgrade hardware version of DMX v1 with support for 2811, fixed RGB leds, relays control with ESP32 and OTA.
+Upgrade hardware version of DMX v1(ESP8266) with support for 2811, fixed RGB leds, relays control with ESP32 and OTA.
 This is essentially a custom RGB led fixture controlled by external DMX controller using 8 DMX channels
 
 New hardware version upgrade from DMX v1.
 
 DMX Input using MAX485 module in receive mode to Rx input using DMXSerial library and examples
+(I had compatibility issues with the DMXSerial and ESP32) Found https://github.com/luksal/ESP32-DMX-RX code that fixed the problem
+
 Output drivers to
 1 x 2811 smart leds using FastLED library and examples
 3 x RGB output (9 PWM) using MOSFET FQP30N06L
@@ -34,6 +36,7 @@ Next steps..
 
 Cleanup spaghetti code.. maybe split into .h and .cpp 
 I found a great effect library for WS2812 from https://github.com/kitesurfer1404/WS2812FX I would like to incorporate.
+
 I also found the great WLED project https://github.com/Aircoookie/WLED but it does not appear to support plain DMX input and trying to make it work with a combo smart and fixed leds maybe too mcuh
 
 
