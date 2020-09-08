@@ -36,8 +36,8 @@ Section 3...250cm = 25 leds    is above fixed RGB using PWM output3
  * ----------CONSTANT
  * 
  */
-const char* ssid = "Champagne";
-const char* password = "1cafe2cafe";
+const char* ssid = "********";
+const char* password = "*********";
 const uint8_t  BrightAdjust[] = {
     0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,
     0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  1,  1,  1,
